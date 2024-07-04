@@ -20,9 +20,8 @@ function navigateToPage(pathname, updateHistory) {
   });
   document.getElementById(pageId).style.display = "block";
   if (updateHistory) {
-    // 2nd argument doesn't do anything. It exists for historical reasons, but must be included. You can pass any value and it will be ignored.
-   // history.pushState({ pageId }, "", `/${pageId}`); -adds page id
+// 2nd argument doesn't do anything. It exists for historical reasons, but must be included. You can pass any value and it will be ignored.
+// history.pushState({ pageId }, "", `/${pageId}`); //adds page id after: index.html/2 (in the second argument)
    history.pushState({ pageId }, "", ``);
   }
-
 }
