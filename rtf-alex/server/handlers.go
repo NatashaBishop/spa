@@ -17,5 +17,28 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 		Message: "Hello from Server",
 	}
 	sendResponse(w, echo)
+}
+
+func postsHandler(w http.ResponseWriter, r *http.Request) {
+	//request db
+	//result:
+	posts := []Post{
+		Post{
+			Id:        1,
+			Author_id: 1,
+			Date:      1728318287544,
+			Content:   "Post1",
+		},
+		Post{
+			Id:        2,
+			Author_id: 1,
+			Date:      4342143214214,
+			Content:   "Post 2",
+		},
+	}
+
+	sendResponse(w, posts)
+
+	//["post" : "{"id" : 1, "author_id" : 1 }", "post" : "" ]
 
 }
