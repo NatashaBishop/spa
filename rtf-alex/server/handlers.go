@@ -21,7 +21,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 
 func postsHandler(w http.ResponseWriter, r *http.Request) {
 	//request db
-	//result:
+	//result(we will implement database later instead of this):
 	posts := []Post{
 		Post{
 			Id:        1,
