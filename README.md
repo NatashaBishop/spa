@@ -1,1 +1,1 @@
-# working on spa application with js-vanila served over golanf server
+# working on spa application with js-vanila served over golang server
